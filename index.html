@@ -199,54 +199,8 @@
           <div class="content section-padding valign" style="margin-left: 10%; margin-top: 50px;">
             <div class="caption">
               <h2>Hi, I'm <span class="teal">Nithyashree Balaji</span></h2>
-              <h5 style="color:#fff"><span class="typing-text" style="font-weight: 300; color:#004d40"></span></h5>
-              <!-- <h5 style="color:#00796b">A <span class="typing" style="font-weight: 300; color:#fff"></span></h5> -->
-              <script>
-                document.addEventListener("DOMContentLoaded", function () {
-                  const phrases = [
-                    "AI & Data Science Enthusiast",
-                    "Machine Learning Engineer",
-                    "NLP Researcher",
-                    "Business Intelligence Developer",
-                    "Data Engineer",
-                    "Software Developer",
-                    "Problem Solver",
-                    "Tech Innovator",
-                    "Cloud & Big Data Enthusiast"
-                  ];
-              
-                  let phraseIndex = 0;
-                  let charIndex = 0;
-                  let typingElement = document.getElementById("typing-text");
-                  let isDeleting = false;
-              
-                  function typeEffect() {
-                    let currentPhrase = phrases[phraseIndex];
-                    
-                    if (isDeleting) {
-                      typingElement.innerHTML = currentPhrase.substring(0, charIndex--);
-                    } else {
-                      typingElement.innerHTML = currentPhrase.substring(0, charIndex++);
-                    }
-              
-                    let typingSpeed = isDeleting ? 50 : 100; // Speed up deletion
-              
-                    if (!isDeleting && charIndex === currentPhrase.length + 1) {
-                      typingSpeed = 1000; // Pause before deleting
-                      isDeleting = true;
-                    } else if (isDeleting && charIndex === 0) {
-                      isDeleting = false;
-                      phraseIndex = (phraseIndex + 1) % phrases.length;
-                      typingSpeed = 500; // Pause before next word
-                    }
-              
-                    setTimeout(typeEffect, typingSpeed);
-                  }
-              
-                  typeEffect(); // Start the animation
-                });
-              </script>
-              
+              <h5 style="color:#fff">A <span class="typing" style="font-weight: 300; color:#004d40"></span></h5>
+
               <h5>Self-driven, quick starter, passionate programmer with a curious mind who enjoys solving a complex and challenging real-world problems.</h5>
             </div>
             <div class="social">
@@ -1071,7 +1025,14 @@
   <script src="assets/vendor/typed.js/typed.min.js"></script>
   <script type="text/javascript">
     var typed = new Typed('.typing',{
-      strings: ["Pythonist", "Developer", "Fast Learner"],
+      strings: ["AI & Data Science Enthusiast",
+      "NLP Researcher",
+      "Business Intelligence Developer",
+      "Data Engineer",
+      "Software Developer",
+      "Problem Solver",
+      "Tech Innovator",
+      "Cloud & Big Data Enthusiast"],
       loop: true,
       typeSpeed: 80,
       backSpeed: 40
