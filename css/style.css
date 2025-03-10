@@ -18,8 +18,6 @@
 .profile-pic img {
   width: 100%;
   height: auto;
-  max-width: 130px;
-  max-height: 130px;
   object-fit: cover;
 }
 
@@ -374,10 +372,11 @@ h3 {
 }
 
 .card {
-  margin-bottom: 60px;
-  display: inline-block;
-  max-width: 150px;
-  text-align: center;
+  width: 100%;
+  max-width: 600px; /* Adjust as needed */
+  padding: 16px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .card .role {
@@ -618,7 +617,11 @@ small {
     margin-bottom: 40px;
   }
   .container {
-    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Prevents compression */
+    gap: 16px;
   }
   nav.hide-on-large.only.trigger {
     display: block;
