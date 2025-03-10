@@ -508,6 +508,7 @@ a.hoverline:hover {
 
 .card.large .card-image {
   height: 230px;
+  overflow: hidden;
 }
 
 .card.large .card-content {
